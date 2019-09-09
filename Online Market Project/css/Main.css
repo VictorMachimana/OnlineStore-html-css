@@ -1,0 +1,299 @@
+body {
+font-family: helvetica, Arial, Times New Roman;
+height: 100%;
+width:100%;
+margin:0;
+padding:0px;
+overflow-x: hidden;
+animation: colorchange 5s linear infinite;
+-webkit-animation: colorchange 5s linear infinite;
+}
+
+@keyframes colorchange
+{
+0%   {background: #F8F9F9;}
+25%  {background: #F3F6F6;}
+50%  {background: #EBF2F2;}
+75%  {background: #D5E3E3;}
+100% {background: #F3F6F6;}
+}
+
+@-webkit-keyframes colorchange
+{
+0%   {background: #F8F9F9;}
+25%  {background: #F3F6F6;}
+50%  {background: #EBF2F2;}
+75%  {background: #D5E3E3;}
+100% {background: #F3F6F6;}
+}
+
+/*welcome-section*/
+.bg-image {
+width:100%;
+background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+rgba(0, 0, 0, 0.5)), url(../images/backgroundpic.jpg);
+height:11%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+margin:0;
+padding-top:5%;
+top:-24px;
+border-top:2px solid #49DA22;
+border-bottom:2px solid #49DA22;
+}
+
+.bg-text {
+font-style: italic;
+font-size:14px;
+text-align: center;
+position: absolute;
+top: 60%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+}
+
+/*navbar*/
+.navbar-header h1 {
+font-weight: bold;
+font-size: 50px;
+}
+
+.navbar-brand {
+margin:0;
+padding:0;
+}
+
+/* change the background color */
+.navbar-custom {
+background-color: #E5E5E5;
+border-bottom: 2px solid white;
+}
+
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+color: black;
+}
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+color: black;
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+color: #fff;
+}
+
+span {
+font-style: italic;
+color: #49DA22;
+}
+
+/*main section*/
+.section {
+display: inline-flex;
+width:100%;
+margin: 0;
+}
+
+/*Side Menu*/
+.menu {
+width:18%;
+position: relative;
+margin-left: 20px;
+margin-right: 115px;
+float: left;
+}
+
+.menu ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+.menu li {
+padding: 8px;
+padding-left: 20px;
+margin-bottom: 7px;
+background-color: #33b5e5;
+color: #ffffff;
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li a {
+text-decoration: none;
+color:#fff;
+}
+
+.menu li:hover {
+background-color: #0099cc;
+}
+
+/*Main*/
+.main {
+position: relative;
+float:right;
+}
+
+.row .description {
+font-family: lucida fax;
+font-size: 18px;
+}
+
+.img-thumbnail {
+padding: 2px;
+}
+
+.img-thumbnail:hover {
+filter: opacity(0.8);
+transform: scale(1.1)
+}
+
+.description {
+font-size: 13px;
+}
+
+#contact {
+padding-bottom:20px;
+padding-top:0px;
+}
+
+/*sub-image-section*/
+.col-md-3 ul {
+display: none;
+z-index: 10;
+top:20px;
+left:5px;
+position: fixed;
+}
+
+.col-md-3:hover ul {
+display: block;
+height: auto;
+margin-top:25%;
+padding: 2px;
+position: fixed;
+border-radius: 5px;
+background-color: #EBEEEE;
+}
+
+.col-md-3 ul li {
+list-style: none;
+cursor: pointer;
+}
+
+.sub-img {
+width: 200px;
+height: 270px;
+}
+
+.subtext {
+font-family: calibri;
+padding: 10px 5px 5px 5px;
+height: 200px;
+width:160px;
+border:1px solid white;
+font-size: 18px;
+color:black;
+float:right;
+}
+
+.subheading {
+font-family: century;
+font-size: x-large;
+text-decoration: underline;
+font-weight: bold;
+}
+
+.Brandname {
+font-family: segoe ui black;
+font-size:12px;
+color: grey;
+}
+
+.item-price {
+font-family: impact;
+font-size:26px;
+}
+
+/*back to Top*/
+.back {
+margin: 90px 0 40px 20px;
+padding: 5px;
+text-align: justify;
+width:7%;
+clear: both;
+color:#fff;
+font-size: 15px;
+border: 1px solid white;
+background-color: #33b5e5;
+border-radius: 10px;
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+}
+
+.back a {
+text-decoration: none;
+color:#fff;
+}
+
+.back:hover {
+background-color: #0099cc;
+}
+
+/*Submit*/
+.section .button {
+cursor: pointer;
+outline: none;
+color: #fff;
+background-color: #4CAF50;
+border: none;
+border-radius: 2px;
+}
+
+.section .button:hover {
+background-color: #3e8e41
+}
+
+.section .button:active {
+background-color: #3e8e41;
+transform: scale(0.9);
+}
+
+/*Footer section*/
+#footer {
+clear:both;
+font-size: 12px;
+border:solid;
+background-color: black;
+padding-left:80px;
+padding-top: 15px;
+}
+
+.footer-text  {
+color:white;
+}
+
+.footer-header {
+font-size:20px;
+color:white;
+}
+
+.about-us {
+text-align:justify-all;
+font-size: 12px;
+color:green;
+font-variant: small-caps;
+border-left:1px solid white;
+padding-left: 10px;
+}
+
+.footer-link {
+text-decoration: none;
+color:white;
+}

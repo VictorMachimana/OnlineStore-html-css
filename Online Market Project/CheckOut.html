@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CheckOut|Form</title>
+
+
+
+	<style>
+		body {
+			background-image: url(images/Payment.jpg);
+			font-family: Arial, Helvetica, sans-sarif;
+			font-size:17px;
+			padding: 8px;
+			margin:20px;
+		}
+
+		h2 {
+			color: #111;
+		  	text-align: center;
+		  	font-weight: bold;
+		  	font-size: 65px;
+		  	padding-top:20px;
+		  	padding-bottom:20px;
+		}
+
+		h3 {
+			font-family: Century;
+		  	padding: 20px 0;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		.row {
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			margin:0 -10px;
+		}
+
+
+		.col-25 {
+  		-ms-flex: 25%;
+  			flex: 25%;
+		}
+
+		.shipping {
+  		-ms-flex: 25%;
+  			flex: 25%;
+		}
+
+		.col-50 {
+			-ms-flex:40%;
+			flex:40%;
+		}
+
+		.col-75 {
+			-ms-flex:60%;
+			flex:60%;
+		}
+
+		.col-25 {
+			padding: 0 16px;
+		}
+
+		.shipping {
+			padding: 0 16px;
+		}
+
+		.col-50 {
+			padding: 0 16px;
+		}
+
+		.col-75 {
+			padding: 0 16px;
+		}
+
+		.container {
+			background-color:#cfcccc85;
+			padding: 3px 18px 13px 18px;
+			border: 1px solid lightgrey;
+			border-radius: 3px;
+		}
+
+		.container a {
+			color:black;
+			text-decoration: none;
+		}
+
+		.container a:hover{
+			color:green;
+			text-decoration: none;
+		}
+
+		input[type=text] {
+			width:98%;
+			margin-bottom: 20px;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+		}
+
+		label {
+			margin-bottom:10px;
+			display: block;
+		}
+
+		.icon-container {
+			margin-bottom: 20px;
+			padding: 7px 0;
+			font-size: 24px;
+		}
+
+		.btn {
+			background-color: #4caf50;
+			color: white;
+			padding: 8px;
+			border:none;
+			width:100%;
+			border-radius: 3px;
+			cursor: pointer;
+			font-size: 17px;
+		}
+
+		.btn a{
+			text-decoration: none;
+			color: #fff;
+		}
+
+		.btn:active {
+  			background-color: #3e8e41;
+  			transform: scale(0.9);
+		}
+
+		hr {
+  			border: 1px solid lightgrey;
+		}
+
+		span .price {
+			float:right;
+			color:grey;
+		}
+
+		@media (max-width: 800px) {
+  		.row {
+    		flex-direction: column-reverse;
+  			}
+  		.col-25 {
+   	 		margin-bottom: 20px;
+  			}
+		}
+
+		.shipping {
+			width:30%;
+		}
+		
+
+	</style>
+
+</head>
+
+<body>
+
+	<h2>Check Out form</h2>
+	<div class="row">
+  		<div class="col-75">
+    		<div class="container">
+      			<form action="https://www.msc.com/zaf">
+      
+       				<div class="row">
+          				<div class="col-50">
+            				<h3>Billing Address</h3>
+            				<label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            				<input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+            				<label for="email"><i class="fa fa-envelope"></i> Email</label>
+            				<input type="text" id="email" name="email" placeholder="john@example.com">
+            				<label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            				<input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            				<label for="city"><i class="fa fa-institution"></i> City</label>
+            				<input type="text" id="city" name="city" placeholder="New York">
+
+            				<div class="row">
+              					<div class="col-50">
+                					<label for="state">State</label>
+                					<input type="text" id="state" name="state" placeholder="NY">
+              					</div>
+              					<div class="col-50">
+                				<label for="zip">Zip</label>
+                				<input type="text" id="zip" name="zip" placeholder="10001">
+              				</div>
+            			</div>
+       	 			</div>
+
+       	 			<div class="col-50">
+        				<h3>Payment</h3>
+            			<label for="fname">Accepted Cards</label>
+           				<div class="icon-container">
+              				<i class="fa fa-cc-visa" style="color:navy;"></i>
+              				<i class="fa fa-cc-amex" style="color:blue;"></i>
+              				<i class="fa fa-cc-mastercard" style="color:red;"></i>
+              				<i class="fa fa-cc-discover" style="color:orange;"></i>
+            			</div>
+            				<label for="cname">Name on Card</label>
+            				<input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            				<label for="ccnum">Credit card number</label>
+            				<input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            				<label for="expmonth">Exp Month</label>
+            				<input type="text" id="expmonth" name="expmonth" placeholder="September">
+            				<div class="row">
+              					<div class="col-50">
+                					<label for="expyear">Exp Year</label>
+                					<input type="text" id="expyear" name="expyear" placeholder="2018">
+              					</div>
+              					<div class="col-50">
+                					<label for="cvv">CVV</label>
+                					<input type="text" id="cvv" name="cvv" placeholder="352">
+              					</div>
+            				</div>
+        				</div>
+          
+        			</div>
+       	 			<label>
+          				<input type="checkbox" checked="checked" name="sameadr"> Shipping address same as 
+          		 	 	 billing
+        			</label>
+       	 			<input type="submit" value="Continue to checkout" class="btn">
+      			</form>
+    		</div>
+ 		</div>
+
+		<div class="col-25">
+			<div class="container">
+      			<h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> 
+      			<b>4</b></span></h4>
+     			<p><a href="#">Product 1</a> <span class="price">$15</span></p>
+     	 		<p><a href="#">Product 2</a> <span class="price">$5</span></p>
+      			<p><a href="#">Product 3</a> <span class="price">$8</span></p>
+      			<p><a href="#">Product 4</a> <span class="price">$2</span></p>
+      			<hr>
+      			<p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+    		</div>
+  		</div>
+  		<br>
+  		<div class="Shipping">	
+    		<div class="container">
+      		<h4><b>Shipping</b></h4>
+      		<form action="/action_page.php">
+  				<input type="radio" name="DHL" value="other">DHL<br>
+  				<input type="radio" name="FedEx" value="other">FedEx<br>
+  				<input type="radio" name="Aramex" value="other">Aramex<br>  
+  				<input type="radio" name="Fastway Couriers" value="other">Fastway Couriers<br>
+ 	 			<input type="radio" name="TNT Express" value="other">TNT Express<br>
+  				<input type="radio" name="Canada Post" value="other">Canada Post<br>  
+			</form>
+      		<hr>
+    	</div>
+	</div>
+  </div>				
+
+</body>
+
+</html>
